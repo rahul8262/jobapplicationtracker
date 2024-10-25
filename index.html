@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Job Application Tracker</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Job Platforms Buttons starting from the top-left side -->
+    <div class="platform-buttons">
+        <a href="https://www.linkedin.com" target="_blank" class="platform-button">LinkedIn</a>
+        <a href="https://www.indeed.com" target="_blank" class="platform-button">Indeed</a>
+        <a href="https://www.ziprecruiter.com" target="_blank" class="platform-button">ZipRecruiter</a>
+        <a href="https://www.glassdoor.com" target="_blank" class="platform-button">Glassdoor</a>
+        <a href="https://www.monster.com" target="_blank" class="platform-button">Monster</a>
+        <a href="https://www.dice.com" target="_blank" class="platform-button">Dice</a>
+        <a href="https://www.otta.com" target="_blank" class="platform-button">Otta</a>
+        <a href="https://www.wellfound.com" target="_blank" class="platform-button">Wellfound</a>
+        <a href="https://www.careerbuilder.com" target="_blank" class="platform-button">CareerBuilder</a>
+        <a href="https://www.usajobs.com" target="_blank" class="platform-button">USAjobs</a>
+        <a href="https://www.weworkremotely.com" target="_blank" class="platform-button">We Work Remotely</a>
+        <a href="https://www.careerjet.com" target="_blank" class="platform-button">Careerjet</a>
+        <a href="https://www.linkup.com" target="_blank" class="platform-button">Linkup</a>
+
+    </div>
+
+    <div class="heading-container">
+        <div class="heading">Job Application Tracker</div>
+    </div>
+
+    <div class="dots-container"></div>
+    <div class="counter">
+        Jobs applied: <span id="checked-count">0</span>
+    </div>
+    <button id="download-pdf" class="styled-button">Download PDF</button>
+
+    <div class="support-container">
+        <h2>Customer Support</h2>
+        <p><strong>Developer:</strong> <span class="highlight-name" id="developer-name">Rahul Perala</span></p>
+        <p><strong>Email:</strong> <a href="mailto:rahulraoperala@gmail.com">rahulraoperala@gmail.com</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/_._.rahul77._._/" target="_blank">@_._.rahul77._._</a></p>
+    </div>
+    
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <video id="support-video" width="640" height="360" controls>
+                <source src="Videos/Namaste.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

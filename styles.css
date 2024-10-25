@@ -1,0 +1,242 @@
+.dots-container {
+    display: grid;
+    grid-template-columns: repeat(5, 120px); /* Adjusted width to fit inputs */
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.dot-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.dot.checked {
+    background-color: #4CAF50;
+}
+
+.company-input {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.counter p {
+    margin: 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000; /* Make sure it's on top of other elements */
+    animation: fadeOut 3s forwards; /* Animation to fade out the popup */
+}
+
+/* Fade out animation */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.heading-container {
+    width: 100%; /* Full width */
+    background-color: #45a049; /* Background color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Vertical padding */
+}
+
+.heading {
+    font-style: italic;
+    color: #f9f9f9; /* Text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin: 0; /* Remove default margin */
+}
+
+.styled-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.styled-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.counter {
+    position: fixed;
+    right: 20px; /* Fixed to the right */
+    top: 20px; /* Position it near the top */
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#download-pdf {
+    position: fixed; /* Fix the position */
+    right: 20px; /* Align with the counter */
+    top: 80px; /* Adjust this to be just below the counter */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#download-pdf:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.support-container {
+    background-color: #45a049;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%; /* Set the width to 100% */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above the support container */
+}
+
+.support-container h2 {
+    font-size: 20px; /* Font size for the heading */
+    margin-bottom: 15px; /* Space between heading and content */
+}
+
+.support-container p {
+    font-size: 16px; /* Font size for the content */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.support-container a {
+    color: #f9f9f9; /* Color for the links */
+    text-decoration: none; /* Remove underline */
+}
+
+.support-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.highlight-name {
+    color: #f9f9f9; /* Set the color to #f9f9f9 */
+    cursor: pointer; /* Change the cursor to a pointer */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+.highlight-name:hover {
+    color: #ec1c09; /* Change text color on hover */
+    background-color: rgba(0, 123, 255, 0.1); /* Optional: Add a background color */
+    text-decoration: underline; /* Optional: Add an underline */
+}
+
+/* Styling for job platform buttons */
+.platform-buttons {
+    position: absolute;
+    top: 100px; /* Starts from the top of the page */
+    left: 20px; /* Aligns to the left of the page */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds spacing between buttons */
+}
+
+.platform-button {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.platform-button:hover {
+    background-color: #ec1c09; /* Darker green on hover */
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
